@@ -4,19 +4,11 @@
   "rules": {
     "prettier/prettier": "warn",
     "camelcase": "off",
-    "import/prefer-default-export": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "js": "never"
-      }
-    ]
+    "import/prefer-default-export": "off"
   },
   "overrides": [
     {
-      "files": "**/*.+ts",
+      "files": "**/*.ts",
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint/eslint-plugin"],
       "extends": ["plugin:@typescript-eslint/recommended", "prettier"],

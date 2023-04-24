@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022"],
+    "rootDir": "src",
+    "outDir": "dist",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
@@ -10,9 +12,8 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "module": "commonjs",
-    "noEmit": true,
-    "noEmitHelpers": true,
-    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
     "noErrorTruncation": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -31,28 +32,5 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "useDefineForClassFields": true,
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@/public/*": [
-        "./public/*"
-      ]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }

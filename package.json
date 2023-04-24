@@ -2,11 +2,12 @@
   "name": "sbstr8",
   "version": "0.0.2",
   "description": "CLI for substrate blog basis",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "npx tsc",
     "type-check": "npx tsc --noEmit",
-    "lint": "npx eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
-    "format": "npx prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "lint": "npx eslint --ignore-path .gitignore \"src/**/*.+(ts|js)\"",
+    "format": "npx prettier --ignore-path .gitignore \"src/**/*.+(ts|js)\" --write",
     "postinstall": "npx husky install",
     "test": "jest --passWithNoTests"
   },
@@ -26,14 +27,16 @@
   },
   "homepage": "https://github.com/elmarsto/sbstr8#readme",
   "lint-staged": {
-    "./src/**/*.{ts,js,jsx,tsx}": [
+    "./src/**/*.{ts,js}": [
       "eslint --ignore-path .gitignore --fix",
       "prettier --ignore-path .gitignore --write"
     ]
   },
   "dependencies": {
+    "commander": "10.0.1",
     "date-fns": "2.29.3",
     "extract-mdx-metadata": "2.0.0",
+    "figlet": "1.6.0",
     "gray-matter": "4.0.3",
     "immer": "^10.0.1",
     "ramda": "^0.29.0",
