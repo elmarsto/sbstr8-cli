@@ -1,23 +1,61 @@
 {
   "name": "sbstr8",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI for substrate blog basis",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "type-check": "npx tsc --noEmit",
+    "lint": "npx eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+    "format": "npx prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "postinstall": "npx husky install",
+    "test": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elmarsto/substr8.git"
+    "url": "git+https://github.com/elmarsto/sbstr8.git"
   },
   "keywords": [
     "substrate",
+    "sbstr8",
     "cli"
   ],
   "author": "@elmarsto",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/elmarsto/substr8/issues"
+    "url": "https://github.com/elmarsto/sbstr8/issues"
   },
-  "homepage": "https://github.com/elmarsto/substr8#readme"
+  "homepage": "https://github.com/elmarsto/sbstr8#readme",
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "eslint --ignore-path .gitignore --fix",
+      "prettier --ignore-path .gitignore --write"
+    ]
+  },
+  "dependencies": {
+    "date-fns": "2.29.3",
+    "extract-mdx-metadata": "2.0.0",
+    "gray-matter": "4.0.3",
+    "immer": "^10.0.1",
+    "ramda": "^0.29.0",
+    "url-join": "5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.5.0",
+    "@commitlint/config-conventional": "17.4.4",
+    "@types/node": "18.15.10",
+    "@types/ramda": "0.29.0",
+    "@typescript-eslint/eslint-plugin": "5.56.0",
+    "@typescript-eslint/parser": "5.56.0",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-import-resolver-typescript": "3.5.3",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.3",
+    "jest": "29.5.0",
+    "lint-staged": "13.2.0",
+    "prettier": "2.8.7",
+    "typescript": "5.0.2"
+  }
 }
