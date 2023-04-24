@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc",
+    "dev": "npx tsc --watch",
     "type-check": "npx tsc --noEmit",
     "lint": "npx eslint --ignore-path .gitignore \"src/**/*.+(ts|js)\"",
     "format": "npx prettier --ignore-path .gitignore \"src/**/*.+(ts|js)\" --write",
