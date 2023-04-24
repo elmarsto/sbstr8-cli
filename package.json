@@ -1,5 +1,5 @@
 {
-  "name": "sbstr8",
+  "name": "sbstr8-cli",
   "version": "0.0.2",
   "description": "CLI for substrate blog basis",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elmarsto/sbstr8.git"
+    "url": "git+https://github.com/elmarsto/sbstr8-cli.git"
   },
   "keywords": [
     "substrate",
@@ -24,9 +24,9 @@
   "author": "@elmarsto",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/elmarsto/sbstr8/issues"
+    "url": "https://github.com/elmarsto/sbstr8-cli/issues"
   },
-  "homepage": "https://github.com/elmarsto/sbstr8#readme",
+  "homepage": "https://github.com/elmarsto/sbstr8-cli#readme",
   "lint-staged": {
     "./src/**/*.{ts,js}": [
       "eslint --ignore-path .gitignore --fix",
@@ -34,6 +34,7 @@
     ]
   },
   "dependencies": {
+    "@types/figlet": "1.5.5",
     "commander": "10.0.1",
     "date-fns": "2.29.3",
     "extract-mdx-metadata": "2.0.0",
