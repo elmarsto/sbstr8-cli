@@ -3,10 +3,11 @@ import figlet from 'figlet';
 
 import project from './project';
 import post from './post';
+import run from './run';
 
 console.log(
-  figlet.textSync('Substrate', {
-    font: 'Script',
+  figlet.textSync('sbstr8', {
+    font: 'Soft',
   }),
 );
 
@@ -17,5 +18,6 @@ program.name('sb').version('0.0.1').description('sbstr8 CLI');
 // dependency injection pattern
 project(program);
 post(program);
+run(program);
 
 program.parse(process.argv);

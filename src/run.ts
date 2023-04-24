@@ -7,5 +7,6 @@ export const run = (command: string) => {
 export default (program: Command) =>
   program
     .command('run') // this is pointless but for completeness it's here
+    .argument('<command>', 'npm command to run')
     .description('passthrough to npm')
     .action(run);

@@ -1,5 +1,5 @@
 # sbstr8-cli
-CLI for elmarsto/substrate (NextJS blog basis)
+CLI for elmarsto/sbstr8 (NextJS blog basis)
 
 **WARNING: Early alpha, may not function exactly as documented here, YMMV**
 
