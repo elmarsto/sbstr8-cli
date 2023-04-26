@@ -2,9 +2,10 @@
   "name": "sbstr8-cli",
   "version": "0.0.2",
   "description": "CLI for substrate blog basis",
-  "main": "dist/index.js",
+  "main": "dist/cli.js",
+  "type": "module",
   "scripts": {
-    "build": "npx tsc",
+    "build": "npx tsc; chmod +x ./dist/cli.js",
     "dev": "npx tsc --watch",
     "type-check": "npx tsc --noEmit",
     "lint": "npx eslint --ignore-path .gitignore \"src/**/*.+(ts|js)\"",
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.5.0",
     "@commitlint/config-conventional": "17.4.4",
+    "@types/inquirer": "9.0.3",
     "@types/node": "18.15.10",
     "@types/ramda": "0.29.0",
     "@typescript-eslint/eslint-plugin": "5.56.0",

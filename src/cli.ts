@@ -1,9 +1,10 @@
+#!/usr/bin/env node
 import { Command } from 'commander';
 import figlet from 'figlet';
 
-import project from './project';
-import post from './post';
-import run from './run';
+import project from './project.js';
+import post from './post.js';
+import run from './run.js';
 
 console.log(
   figlet.textSync('sbstr8', {

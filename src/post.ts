@@ -1,11 +1,13 @@
 import { Command } from 'commander';
+import inquirer from 'inquirer';
 
 export const list = () => {
   console.log('TODO: list posts');
 };
 
-export const make = (slug: string) => {
-  console.log(`TODO: make a new post with slug ${slug}`);
+export const make = async (slug: string) => {
+  const answers = await inquirer.prompt(['foo']);
+  console.log(answers, slug);
 };
 
 export const edit = (slug: string) => {
