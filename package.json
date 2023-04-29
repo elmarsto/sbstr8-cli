@@ -1,6 +1,6 @@
 {
   "name": "sbstr8-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI for sbstr8 basis",
   "exports": "dist/cli.js",
   "bin": {
@@ -17,7 +17,6 @@
     "type-check": "npx tsc --noEmit",
     "lint": "npx eslint --ignore-path .gitignore \"src/**/*.+(ts|js)\"",
     "format": "npx prettier --ignore-path .gitignore \"src/**/*.+(ts|js)\" --write",
-    "postinstall": "npx husky install",
     "test": "jest --passWithNoTests"
   },
   "repository": {
@@ -41,7 +40,6 @@
     ]
   },
   "dependencies": {
-    "@types/figlet": "1.5.5",
     "commander": "10.0.1",
     "date-fns": "2.29.3",
     "extract-mdx-metadata": "2.0.0",
@@ -56,6 +54,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.5.0",
     "@commitlint/config-conventional": "17.4.4",
+    "@types/figlet": "1.5.5",
     "@types/inquirer": "9.0.3",
     "@types/node": "18.15.10",
     "@types/ramda": "0.29.0",
