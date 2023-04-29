@@ -1,7 +1,7 @@
 {
   "name": "sbstr8-cli",
   "version": "0.0.2",
-  "description": "CLI for substrate blog basis",
+  "description": "CLI for sbstr8 basis",
   "exports": "dist/cli.js",
   "engines": {
     "node": ">=16.0.0"
