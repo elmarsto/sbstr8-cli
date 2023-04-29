@@ -3,12 +3,16 @@
   "version": "0.0.2",
   "description": "CLI for sbstr8 basis",
   "exports": "dist/cli.js",
+  "bin": {
+    "s8": "./dist/cli.js"
+  },
   "engines": {
     "node": ">=16.0.0"
   },
   "type": "module",
   "scripts": {
     "build": "npx tsc; chmod +x ./dist/cli.js",
+    "start": "node ./dist/cli.js",
     "dev": "npx tsc --watch",
     "type-check": "npx tsc --noEmit",
     "lint": "npx eslint --ignore-path .gitignore \"src/**/*.+(ts|js)\"",
