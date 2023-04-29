@@ -2,7 +2,10 @@
   "name": "sbstr8-cli",
   "version": "0.0.2",
   "description": "CLI for substrate blog basis",
-  "main": "dist/cli.js",
+  "exports": "dist/cli.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "type": "module",
   "scripts": {
     "build": "npx tsc; chmod +x ./dist/cli.js",
